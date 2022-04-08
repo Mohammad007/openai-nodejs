@@ -3,10 +3,6 @@ const { Configuration, OpenAIApi } = require("openai");
 const app = express()
 const port = 5000
 
-// !important! 
-// you need to install the following libraries |express|[dotenv > if required]
-// or run this command >> npm i express dotenv 
-
 app.use(express.json())
 
 app.post('/' , async (req , res)=>{
